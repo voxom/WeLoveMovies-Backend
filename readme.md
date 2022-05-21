@@ -33,22 +33,22 @@ Backend Capstone for Thinkful
 * PUT/DELETE /reviews/:reviewId 
 
 ## /movies
-![movies](/images/movies.PNG)
+![movies](/images/movies.png)
 
 ## /movies/:movieId
-![movies/:movieId](/images/movies-movieId.PNG)
+![movies/:movieId](/images/movies-movieId.png)
 
 ## /movies/:movieId/theaters
-![movies/:movieId/theaters](/images/movies-movieId-theaters.PNG)
+![movies/:movieId/theaters](/images/movies-movieId-theaters.png)
 
 ## /movies/:movieId/reviews
-![movies/:movieId/reviews](/images/movies-movieId-reviews.PNG)
+![movies/:movieId/reviews](/images/movies-movieId-reviews.png)
 
 ## /theaters
-![theaters](/images/theaters.PNG)
+![theaters](/images/theaters.png)
 
 ## /reviews PUT
-![reviews-1](/images/reviews-reviewId-1.PNG)
+![reviews-1](/images/reviews-reviewId-1.png)
 
 ## /reviews DELETE
-![reviews-2](/images/reviews-reviewId-2.PNG)
+![reviews-2](/images/reviews-reviewId-2.png)
