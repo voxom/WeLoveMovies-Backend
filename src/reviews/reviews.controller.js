@@ -1,6 +1,7 @@
 const service = require("./reviews.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
+// Checks if the review exists
 async function reviewExists(req, res, next) {
   const review = await service.read(Number(req.params.reviewId));
   if (review) {
@@ -10,6 +11,7 @@ async function reviewExists(req, res, next) {
   next({ status: 404, message: "Reviews cannot be found." });
 }
 
+// Updates the review
 async function update(req, res) {
   const updatedReview = {
     ...res.locals.review,
@@ -21,10 +23,12 @@ async function update(req, res) {
   res.json({ data: updatedReview });
 }
 
+// Reads the review if it exists
 async function read(req, res) {
   res.json({ data: res.locals.review });
 }
 
+// Deletes the review
 async function destroy(req, res) {
   const { review } = res.locals;
   await service.destroy(review.review_id);

@@ -1,6 +1,7 @@
 const service = require("./theaters.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
+// lists the given theater
 async function list(req, res) {
   const { movieId } = req.params;
   let data;
@@ -15,5 +16,3 @@ async function list(req, res) {
 module.exports = {
   list: asyncErrorBoundary(list),
 };
-
-// added comment
